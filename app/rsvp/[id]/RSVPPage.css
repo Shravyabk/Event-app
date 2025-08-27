@@ -1,0 +1,66 @@
+/* Container */
+.rsvp-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Form card */
+.rsvp-card {
+  background-color: #111;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  min-width: 300px;
+}
+
+/* Heading */
+.rsvp-card h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Select dropdown */
+.rsvp-card select {
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Submit button */
+.rsvp-card button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.rsvp-card button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+/* Message */
+.rsvp-card p {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

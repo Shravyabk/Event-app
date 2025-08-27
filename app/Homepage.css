@@ -1,0 +1,72 @@
+/* Full screen container with black background and centered content */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading animation */
+.heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+/* Subheading animation */
+.subheading {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards 0.5s; /* delay 0.5s */
+}
+
+/* Button styling and animation */
+.btn {
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #ddd;
+}
+
+/* Bounce animation for heading */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Fade in animation for subheading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
